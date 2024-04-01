@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Community Service Projects from VVIT for Sustainable Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/customize.css" rel="stylesheet" media="screen">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	<div id="page">
+		<div id="main-container">
+			<div class="sticky-wrapper">
+				<nav id="navigation">
+					<div class="container">
+						<a href="index.html" id="logo"><img class=logo src="images/logo.png" alt="Logo Image"></a>
+						<nav>
+							<ul id="menu">
+								<li><a href="index.html#project">Project</a></li>
+								<li><a href="index.html#team">Team</a></li>
+								<li><a href="index.html#services">Services</a></li>
+								<li><a href="index.html#gallery">Gallery</a></li>
+								<li><a href="index.html#events">Events</a></li>
+								<li><a href="index.html#blog">Blog</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+								<li><a href="index.html#donation" class="btn btn-success">Donation</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+			</div>
+			<section id="single-page" class="section with-arrow">
+				<div class="section-header">
+					<div class="container">
+						<h1>CSP from VVIT for Sustainable Development</h1>
+					</div>
+				</div>
+				<div class="section-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="event-featured">
+								    <center><img src="images/event/vvit.jpg" alt="Featured Image"></center>
+							    </div>
+							    <div class="event-date">
+									<p><span class="icon icon-calendar"></span> April 4, 2024</p>
+									<P><span class="icon icon-location"></span> VVIT, Nambur, Guntur District, Andhra Pradesh, India</p>
+							    </div>
+							    <div class="event-content">
+								    <p><span class="dropcap">T</span>he Community Service Project (CSP) event at VVIT College is a multifaceted endeavor that brings together students, faculty, and community members to tackle pressing social issues. This event comprises various activities, including awareness drives, skill-building workshops, and hands-on projects aimed at improving the quality of life in surrounding areas.</p>
+									<p>One key aspect of the CSP event is its focus on environmental sustainability. Through initiatives such as tree planting drives, waste management workshops, and campaigns promoting renewable energy, participants contribute to creating a cleaner and greener community. These efforts not only benefit the environment but also raise awareness about the importance of environmental conservation among local residents.
+									<p>Additionally, the CSP event emphasizes education and empowerment. Workshops on topics like digital literacy, healthcare awareness, and vocational skills equip community members with valuable knowledge and tools to enhance their livelihoods. By empowering individuals with education and skills, the event aims to uplift marginalized communities and promote social inclusion.</p>
+									<p>Furthermore, the CSP event fosters a spirit of volunteerism and civic engagement among students. Through volunteering opportunities and community service projects, students develop leadership skills, empathy, and a sense of responsibility towards the welfare of society. By actively participating in these activities, students become agents of positive change, inspiring others to join efforts towards building a more equitable and sustainable future.</p>
+									<p>Overall, the CSP event at VVIT College serves as a platform for collaborative action, bringing together diverse stakeholders to address societal challenges, promote sustainable development, and create lasting impact in the local community.</p>
+									<p>As per ASSOCHAM only 4% of e-waste is properly recycled in India and the remaining is going into landfills or dismantled in unhygienic conditions causing environmental and health problems. Managing e-waste properly with resource recovery is therefore important and Centre for Global Management and Responsible Management, XLRI, Jamshedpur is organizing a full day National Conference on E-waste Management at Jamshedpur, India during January 23, 2017.</p>
+									<h4> Credits: www.vvitguntur.com </h4> 
+								</div>
+							    <div class="event-location">
+								    <h2>Event Location</h2>
+								    <div id="map-canvas"></div>
+							    </div>
+
+							</div>
+							<div class="col-md-3">
+					            <div class="widget">
+					              <h3>Upcoming events</h3>
+					              <ul class="widget-latests list-unstyled">
+					                <li>
+					                  <a href="single-event.html"><img src="images/event/2.png" alt="Post thumbnail"></a>
+					                  <h4>No upcoming events other than this.</h4>
+					                  <span><span class="icon icon-calendar"></span></span>
+					                  <span><span class="icon icon-location"></span></span></p>
+					                </li>
+					              </ul>
+					            </div>
+					            <div class="widget">
+					              <h3>Yes, you can help us now</h3>
+					              <a href="index.html#donation" class="btn btn-default widget-btn">Make a Donation</a>
+					            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="footer" class="section section-full-colored">
+				<div class="section-content center">
+					<p>&copy; 2024 - Sivani, Srija, Sundeep & Vishnu. Made with <i class="fa fa-heart" style="font-size: 20px; color:red;"> &#9829; </i> in India.</p>
+				</div>
+			</section>
+		</div>
+		<div id="loader"></div>
+  	</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=aviaOnGoogleMapsLoaded&key=AIzaSyDgEW7-uLzuTOYjSXmB1u-TK8CizoOC-JA"></script>
+    <script>
+		function initialize() {
+		  var myLatlng = new google.maps.LatLng(22.8133,86.1908); //YOUR LOCATION -> http://itouchmap.com/latlong.html
+		  var mapOptions = {
+		    zoom: 6,
+		    center: myLatlng
+		  }
+		  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      title: 'Hello World! Your Location'
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<script src="js/jquery.sequence-min.js"></script>
+	<script src="js/alert.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
